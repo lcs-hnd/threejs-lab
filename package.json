@@ -1,0 +1,53 @@
+{
+  "name": "js-project-template",
+  "version": "1.0.0",
+  "description": "A lightweight boilerplate for modern JavaScript development. Includes Webpack 5 for bundling, a live dev server, ESLint for code quality, Prettier for formatting, and Stylelint for CSS grouping & readability.",
+  "scripts": {
+    "dev": "webpack serve",
+    "start": "webpack serve",
+    "format": "prettier --write .",
+    "build": "NODE_ENV=production webpack --mode=production",
+    "lint:js": "eslint \"src/js/**/*.js\" --fix",
+    "lint:css": "stylelint \"src/**/*.css\" --fix",
+    "fix:all": "npm run format && npm run lint:css && npm run lint:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcs-hnd/js-project-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lcs-hnd/js-project-template/issues"
+  },
+  "homepage": "https://github.com/lcs-hnd/js-project-template#readme",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@eslint/js": "^9.30.1",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.6.2",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.21.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-order": "^7.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
+}

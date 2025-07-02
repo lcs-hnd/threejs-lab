@@ -1,0 +1,165 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "declaration-empty-line-before": null,
+    "length-zero-no-unit": [true, { "ignore": ["custom-properties"] }],
+    "order/properties-order": [
+      {
+        "groupName": "display",
+        "emptyLineBefore": "always",
+        "properties": [
+          "content",
+          "appearance",
+          "position",
+          "top",
+          "right",
+          "bottom",
+          "left",
+          "z-index",
+          "display",
+          "flex",
+          "flex-direction",
+          "flex-basis",
+          "flex-flow",
+          "flex-grow",
+          "flex-shrink",
+          "flex-wrap",
+          "align-content",
+          "align-items",
+          "justify-content",
+          "justify-items"
+        ]
+      },
+      {
+        "groupName": "grid",
+        "emptyLineBefore": "always",
+        "properties": [
+          "grid",
+          "grid-area",
+          "grid-template",
+          "grid-template-areas",
+          "grid-template-rows",
+          "grid-template-columns",
+          "grid-row",
+          "grid-row-start",
+          "grid-row-end",
+          "grid-column",
+          "grid-column-start",
+          "grid-column-end",
+          "grid-auto-rows",
+          "grid-auto-columns",
+          "grid-auto-flow",
+          "grid-gap",
+          "grid-row-gap",
+          "grid-column-gap",
+          "gap"
+        ]
+      },
+      {
+        "groupName": "dimensions",
+        "emptyLineBefore": "always",
+        "properties": [
+          "width",
+          "max-width",
+          "min-width",
+          "height",
+          "max-height",
+          "min-height"
+        ]
+      },
+      {
+        "groupName": "margin and padding",
+        "emptyLineBefore": "always",
+        "properties": [
+          "margin",
+          "margin-top",
+          "margin-right",
+          "margin-bottom",
+          "margin-left",
+          "padding",
+          "padding-top",
+          "padding-right",
+          "padding-bottom",
+          "padding-left"
+        ]
+      },
+      {
+        "groupName": "border and background",
+        "emptyLineBefore": "always",
+        "properties": [
+          "box-sizing",
+          "border",
+          "border-top",
+          "border-right",
+          "border-bottom",
+          "border-left",
+          "border-width",
+          "border-radius",
+          "outline",
+          "box-shadow",
+          "background",
+          "background-color",
+          "background-image"
+        ]
+      },
+      {
+        "groupName": "font",
+        "emptyLineBefore": "always",
+        "properties": [
+          "font",
+          "font-family",
+          "font-size",
+          "font-style",
+          "font-weight",
+          "line-height",
+          "color",
+          "text-decoration",
+          "font-smoothing",
+          "text-transform",
+          "letter-spacing",
+          "text-align"
+        ]
+      },
+      {
+        "groupName": "visual",
+        "emptyLineBefore": "always",
+        "properties": [
+          "opacity",
+          "visibility",
+          "filter",
+          "clip-path",
+          "box-shadow",
+          "outline",
+          "background-clip"
+        ]
+      },
+      {
+        "groupName": "animation and transition",
+        "emptyLineBefore": "always",
+        "properties": ["transition", "transform", "animation", "will-change"]
+      },
+      {
+        "groupName": "positioning",
+        "emptyLineBefore": "always",
+        "properties": [
+          "position",
+          "top",
+          "right",
+          "bottom",
+          "left",
+          "z-index",
+          "inset"
+        ]
+      },
+      {
+        "groupName": "misc",
+        "emptyLineBefore": "always",
+        "properties": ["cursor", "user-select", "visibility", "filter"]
+      }
+    ],
+    "block-no-empty": true,
+    "color-hex-length": "short",
+    "unit-allowed-list": ["em", "rem", "%", "s", "px", "deg", "vh", "vw", "fr"]
+  }
+}
